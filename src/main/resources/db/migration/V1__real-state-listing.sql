@@ -1,0 +1,22 @@
+CREATE TABLE ESTATE (
+    id CHAR(36) PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    price DOUBLE PRECISION NOT NULL,
+    latitude DOUBLE PRECISION NOT NULL,
+    longitude DOUBLE PRECISION NOT NULL,
+    owner_full_name_first VARCHAR(52) NOT NULL,
+    owner_full_name_last VARCHAR(52) NOT NULL,
+    owners_phone_number VARCHAR(20) NOT NULL,
+    owner_type VARCHAR(50) NOT NULL,
+    state_type VARCHAR(50) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    district VARCHAR(50) NOT NULL,
+    area DOUBLE PRECISION NOT NULL,
+    is_cixariw BOOLEAN NOT NULL,
+    is_renovated BOOLEAN NOT NULL,
+    number_of_rooms INT NOT NULL,
+    total_floors INT NOT NULL,
+    floor_of_listing INT NOT NULL,
+    images TEXT[]
+);
